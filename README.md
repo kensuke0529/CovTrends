@@ -104,7 +104,7 @@ This dual-axis time series graph visualizes the impact of COVID-19 on mortality 
 
  The analysis reveals that most states peaked early in 2020, with some clusters showing a later resurgence in 2021 or 2022. This points to possible patterns in response measures, like lockdowns or vaccine rollouts, affecting the timing of peaks
 
-![alt text](image-1.png)
+![alt text](image-3.png)
  The clustering analysis grouped states by similarities in their COVID-19 mortality patterns.
 
 Cluster 0 – “Moderate, Diffuse Pattern” (26 states)
@@ -141,8 +141,7 @@ States grouped into four clusters showing distinct outbreak timing and severity,
 
 ## Interactive Dashboard 
 Using the dataset made in this project, made an interactive dashboard by Tableau. 
-
-![alt text](image-3.png)
+![alt text](image-4.png)
 
 ## Limitation & Fruther analysis
 While this project offers valuable insights into COVID-19 mortality trends across U.S. states, it is important to acknowledge limitations such as data suppression for small counts, provisional reporting lags, and extrapolated population estimates. Future research could enhance this analysis by integrating socioeconomic indicators, vaccination data, healthcare capacity, and policy timelines to better understand the complex interplay of factors that shaped pandemic outcomes.
