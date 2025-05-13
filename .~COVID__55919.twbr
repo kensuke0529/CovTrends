@@ -1,0 +1,2060 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20233.24.0908.0833                               -->
+<workbook original-version='18.1' source-build='2023.3.10 (20233.24.0908.0833)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='weekly_df' inline='true' name='federated.1ah3ram04xcmgx17rpye51psmwaw' version='18.1'>
+      <connection class='federated' tableau-ri='true'>
+        <named-connections>
+          <named-connection caption='weekly_df' name='textscan.0oi28xb0483rcm1ac93n21udvm00'>
+            <connection class='textscan' directory='/Users/kensukeumakoshi/Downloads/DA project/covtrends' filename='weekly_df_weekly_df.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0oi28xb0483rcm1ac93n21udvm00' name='weekly_df.csv' table='[weekly_df#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='date' name='data_as_of' ordinal='1' />
+            <column datatype='date' name='start_date' ordinal='2' />
+            <column datatype='date' name='end_date' ordinal='3' />
+            <column datatype='string' name='group' ordinal='4' />
+            <column datatype='integer' name='year' ordinal='5' />
+            <column datatype='real' name='mmwr_week' ordinal='6' />
+            <column datatype='date' name='week_ending_date' ordinal='7' />
+            <column datatype='string' name='state' ordinal='8' />
+            <column datatype='real' name='covid_19_deaths' ordinal='9' />
+            <column datatype='real' name='total_deaths' ordinal='10' />
+            <column datatype='real' name='percent_of_expected_deaths' ordinal='11' />
+            <column datatype='real' name='pneumonia_deaths' ordinal='12' />
+            <column datatype='real' name='pneumonia_and_covid_19_deaths' ordinal='13' />
+            <column datatype='real' name='influenza_deaths' ordinal='14' />
+            <column datatype='real' name='pneumonia_influenza_or_covid_19_deaths' ordinal='15' />
+            <column datatype='string' name='footnote' ordinal='16' />
+            <column datatype='real' name='month' ordinal='17' />
+            <column datatype='real' name='%_covid' ordinal='18' />
+            <column datatype='real' name='%_covid+pneumonia' ordinal='19' />
+            <column datatype='real' name='%_covid|pneumonia' ordinal='20' />
+            <column datatype='integer' name='population' ordinal='21' />
+            <column datatype='real' name='%_covid_per_pop' ordinal='22' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0oi28xb0483rcm1ac93n21udvm00' name='weekly_df.csv' table='[weekly_df#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='date' name='data_as_of' ordinal='1' />
+            <column datatype='date' name='start_date' ordinal='2' />
+            <column datatype='date' name='end_date' ordinal='3' />
+            <column datatype='string' name='group' ordinal='4' />
+            <column datatype='integer' name='year' ordinal='5' />
+            <column datatype='real' name='mmwr_week' ordinal='6' />
+            <column datatype='date' name='week_ending_date' ordinal='7' />
+            <column datatype='string' name='state' ordinal='8' />
+            <column datatype='real' name='covid_19_deaths' ordinal='9' />
+            <column datatype='real' name='total_deaths' ordinal='10' />
+            <column datatype='real' name='percent_of_expected_deaths' ordinal='11' />
+            <column datatype='real' name='pneumonia_deaths' ordinal='12' />
+            <column datatype='real' name='pneumonia_and_covid_19_deaths' ordinal='13' />
+            <column datatype='real' name='influenza_deaths' ordinal='14' />
+            <column datatype='real' name='pneumonia_influenza_or_covid_19_deaths' ordinal='15' />
+            <column datatype='string' name='footnote' ordinal='16' />
+            <column datatype='real' name='month' ordinal='17' />
+            <column datatype='real' name='%_covid' ordinal='18' />
+            <column datatype='real' name='%_covid+pneumonia' ordinal='19' />
+            <column datatype='real' name='%_covid|pneumonia' ordinal='20' />
+            <column datatype='integer' name='population' ordinal='21' />
+            <column datatype='real' name='%_covid_per_pop' ordinal='22' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <refresh increment-key='' incremental-updates='false' />
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[weekly_df.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[weekly_df.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weekly_df.csv_7040F55E36B245B7B0FAE87EFC74AFB4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data_as_of</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[data_as_of]</local-name>
+            <parent-name>[weekly_df.csv]</parent-name>
+            <remote-alias>data_as_of</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weekly_df.csv_7040F55E36B245B7B0FAE87EFC74AFB4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[start_date]</local-name>
+            <parent-name>[weekly_df.csv]</parent-name>
+            <remote-alias>start_date</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weekly_df.csv_7040F55E36B245B7B0FAE87EFC74AFB4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>end_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[end_date]</local-name>
+            <parent-name>[weekly_df.csv]</parent-name>
+            <remote-alias>end_date</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weekly_df.csv_7040F55E36B245B7B0FAE87EFC74AFB4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>group</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[group]</local-name>
+            <parent-name>[weekly_df.csv]</parent-name>
+            <remote-alias>group</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weekly_df.csv_7040F55E36B245B7B0FAE87EFC74AFB4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[weekly_df.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weekly_df.csv_7040F55E36B245B7B0FAE87EFC74AFB4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mmwr_week</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[mmwr_week]</local-name>
+            <parent-name>[weekly_df.csv]</parent-name>
+            <remote-alias>mmwr_week</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weekly_df.csv_7040F55E36B245B7B0FAE87EFC74AFB4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>week_ending_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[week_ending_date]</local-name>
+            <parent-name>[weekly_df.csv]</parent-name>
+            <remote-alias>week_ending_date</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weekly_df.csv_7040F55E36B245B7B0FAE87EFC74AFB4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[weekly_df.csv]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weekly_df.csv_7040F55E36B245B7B0FAE87EFC74AFB4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>covid_19_deaths</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[covid_19_deaths]</local-name>
+            <parent-name>[weekly_df.csv]</parent-name>
+            <remote-alias>covid_19_deaths</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weekly_df.csv_7040F55E36B245B7B0FAE87EFC74AFB4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_deaths</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_deaths]</local-name>
+            <parent-name>[weekly_df.csv]</parent-name>
+            <remote-alias>total_deaths</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weekly_df.csv_7040F55E36B245B7B0FAE87EFC74AFB4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>percent_of_expected_deaths</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[percent_of_expected_deaths]</local-name>
+            <parent-name>[weekly_df.csv]</parent-name>
+            <remote-alias>percent_of_expected_deaths</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weekly_df.csv_7040F55E36B245B7B0FAE87EFC74AFB4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pneumonia_deaths</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pneumonia_deaths]</local-name>
+            <parent-name>[weekly_df.csv]</parent-name>
+            <remote-alias>pneumonia_deaths</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weekly_df.csv_7040F55E36B245B7B0FAE87EFC74AFB4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pneumonia_and_covid_19_deaths</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pneumonia_and_covid_19_deaths]</local-name>
+            <parent-name>[weekly_df.csv]</parent-name>
+            <remote-alias>pneumonia_and_covid_19_deaths</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weekly_df.csv_7040F55E36B245B7B0FAE87EFC74AFB4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>influenza_deaths</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[influenza_deaths]</local-name>
+            <parent-name>[weekly_df.csv]</parent-name>
+            <remote-alias>influenza_deaths</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weekly_df.csv_7040F55E36B245B7B0FAE87EFC74AFB4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pneumonia_influenza_or_covid_19_deaths</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pneumonia_influenza_or_covid_19_deaths]</local-name>
+            <parent-name>[weekly_df.csv]</parent-name>
+            <remote-alias>pneumonia_influenza_or_covid_19_deaths</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weekly_df.csv_7040F55E36B245B7B0FAE87EFC74AFB4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>footnote</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[footnote]</local-name>
+            <parent-name>[weekly_df.csv]</parent-name>
+            <remote-alias>footnote</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weekly_df.csv_7040F55E36B245B7B0FAE87EFC74AFB4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[month]</local-name>
+            <parent-name>[weekly_df.csv]</parent-name>
+            <remote-alias>month</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weekly_df.csv_7040F55E36B245B7B0FAE87EFC74AFB4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>%_covid</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[%_covid]</local-name>
+            <parent-name>[weekly_df.csv]</parent-name>
+            <remote-alias>%_covid</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weekly_df.csv_7040F55E36B245B7B0FAE87EFC74AFB4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>%_covid+pneumonia</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[%_covid+pneumonia]</local-name>
+            <parent-name>[weekly_df.csv]</parent-name>
+            <remote-alias>%_covid+pneumonia</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weekly_df.csv_7040F55E36B245B7B0FAE87EFC74AFB4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>%_covid|pneumonia</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[%_covid|pneumonia]</local-name>
+            <parent-name>[weekly_df.csv]</parent-name>
+            <remote-alias>%_covid|pneumonia</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weekly_df.csv_7040F55E36B245B7B0FAE87EFC74AFB4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>population</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[population]</local-name>
+            <parent-name>[weekly_df.csv]</parent-name>
+            <remote-alias>population</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weekly_df.csv_7040F55E36B245B7B0FAE87EFC74AFB4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>%_covid_per_pop</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[%_covid_per_pop]</local-name>
+            <parent-name>[weekly_df.csv]</parent-name>
+            <remote-alias>%_covid_per_pop</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weekly_df.csv_7040F55E36B245B7B0FAE87EFC74AFB4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='% Covid+Pneumonia' datatype='real' name='[%_covid+pneumonia]' role='measure' type='quantitative' />
+      <column caption='% Covid' datatype='real' name='[%_covid]' role='measure' type='quantitative' />
+      <column caption='% Covid Per Pop' datatype='real' name='[%_covid_per_pop]' role='measure' type='quantitative' />
+      <column caption='% Covid|Pneumonia' datatype='real' name='[%_covid|pneumonia]' role='measure' type='quantitative' />
+      <column caption='latest week' datatype='boolean' name='[Calculation_5198490985424244737]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='DATETRUNC(&apos;week&apos;, [start_date]) = { FIXED : MAX(DATETRUNC(&apos;week&apos;, [start_date])) }' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='weekly_df.csv' datatype='table' name='[__tableau_internal_object_id__].[weekly_df.csv_7040F55E36B245B7B0FAE87EFC74AFB4]' role='measure' type='quantitative' />
+      <column caption='Covid 19 Deaths' datatype='real' name='[covid_19_deaths]' role='measure' type='quantitative' />
+      <column caption='Data As Of' datatype='date' name='[data_as_of]' role='dimension' type='ordinal' />
+      <column caption='End Date' datatype='date' name='[end_date]' role='dimension' type='ordinal' />
+      <column caption='Footnote' datatype='string' name='[footnote]' role='dimension' type='nominal' />
+      <column caption='Group' datatype='string' name='[group]' role='dimension' type='nominal' />
+      <column caption='Influenza Deaths' datatype='real' name='[influenza_deaths]' role='measure' type='quantitative' />
+      <column caption='Mmwr Week' datatype='real' name='[mmwr_week]' role='dimension' type='quantitative' />
+      <column caption='Month' datatype='real' name='[month]' role='dimension' type='quantitative' />
+      <column caption='Percent Of Expected Deaths' datatype='real' name='[percent_of_expected_deaths]' role='measure' type='quantitative' />
+      <column caption='Pneumonia And Covid 19 Deaths' datatype='real' name='[pneumonia_and_covid_19_deaths]' role='measure' type='quantitative' />
+      <column caption='Pneumonia Deaths' datatype='real' name='[pneumonia_deaths]' role='measure' type='quantitative' />
+      <column caption='Pneumonia Influenza Or Covid 19 Deaths' datatype='real' name='[pneumonia_influenza_or_covid_19_deaths]' role='measure' type='quantitative' />
+      <column caption='Population' datatype='integer' name='[population]' role='measure' type='quantitative' />
+      <column caption='Start Date' datatype='date' name='[start_date]' role='dimension' type='ordinal' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Total Deaths' datatype='real' name='[total_deaths]' role='measure' type='quantitative' />
+      <column caption='Week Ending Date' datatype='date' name='[week_ending_date]' role='dimension' type='ordinal' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <column-instance column='[influenza_deaths]' derivation='Attribute' name='[attr:influenza_deaths:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[covid_19_deaths]' derivation='Avg' name='[avg:covid_19_deaths:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[covid_19_deaths]' derivation='Count' name='[cnt:covid_19_deaths:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[covid_19_deaths]' derivation='None' name='[none:covid_19_deaths:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[influenza_deaths]' derivation='None' name='[none:influenza_deaths:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[pneumonia_deaths]' derivation='None' name='[none:pneumonia_deaths:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+      <column-instance column='[covid_19_deaths]' derivation='Sum' name='[sum:covid_19_deaths:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[influenza_deaths]' derivation='Sum' name='[sum:influenza_deaths:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[pneumonia_deaths]' derivation='Sum' name='[sum:pneumonia_deaths:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='100' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1ah3ram04xcmgx17rpye51psmwaw].[avg:covid_19_deaths:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1ah3ram04xcmgx17rpye51psmwaw].[cnt:covid_19_deaths:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1ah3ram04xcmgx17rpye51psmwaw].[none:covid_19_deaths:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1ah3ram04xcmgx17rpye51psmwaw].[sum:covid_19_deaths:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1ah3ram04xcmgx17rpye51psmwaw].[attr:influenza_deaths:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1ah3ram04xcmgx17rpye51psmwaw].[none:influenza_deaths:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1ah3ram04xcmgx17rpye51psmwaw].[none:pneumonia_deaths:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1ah3ram04xcmgx17rpye51psmwaw].[sum:influenza_deaths:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1ah3ram04xcmgx17rpye51psmwaw].[sum:pneumonia_deaths:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:state:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Delaware&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Nevada&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Washington&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;California&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Maryland&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Rhode Island&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Arizona&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Mississippi&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Georgia&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Pennsylvania&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;District of Columbia&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;New Hampshire&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;West Virginia&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Arkansas&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Missouri&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Utah&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Kansas&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Louisiana&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Alabama&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Massachusetts&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;South Carolina&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Indiana&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Oklahoma&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Colorado&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Montana&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Vermont&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Hawaii&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;North Carolina&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Idaho&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;North Dakota&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Iowa&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Oregon&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Kentucky&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Maine&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Puerto Rico&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;New Jersey&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Texas&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Wisconsin&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Connecticut&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Nebraska&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Virginia&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Michigan&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;New York&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;South Dakota&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Illinois&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Ohio&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Florida&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;New Mexico&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Wyoming&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Alaska&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Minnesota&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Tennessee&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='weekly_df.csv' id='weekly_df.csv_7040F55E36B245B7B0FAE87EFC74AFB4'>
+            <properties context=''>
+              <relation connection='textscan.0oi28xb0483rcm1ac93n21udvm00' name='weekly_df.csv' table='[weekly_df#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='date' name='data_as_of' ordinal='1' />
+                  <column datatype='date' name='start_date' ordinal='2' />
+                  <column datatype='date' name='end_date' ordinal='3' />
+                  <column datatype='string' name='group' ordinal='4' />
+                  <column datatype='integer' name='year' ordinal='5' />
+                  <column datatype='real' name='mmwr_week' ordinal='6' />
+                  <column datatype='date' name='week_ending_date' ordinal='7' />
+                  <column datatype='string' name='state' ordinal='8' />
+                  <column datatype='real' name='covid_19_deaths' ordinal='9' />
+                  <column datatype='real' name='total_deaths' ordinal='10' />
+                  <column datatype='real' name='percent_of_expected_deaths' ordinal='11' />
+                  <column datatype='real' name='pneumonia_deaths' ordinal='12' />
+                  <column datatype='real' name='pneumonia_and_covid_19_deaths' ordinal='13' />
+                  <column datatype='real' name='influenza_deaths' ordinal='14' />
+                  <column datatype='real' name='pneumonia_influenza_or_covid_19_deaths' ordinal='15' />
+                  <column datatype='string' name='footnote' ordinal='16' />
+                  <column datatype='real' name='month' ordinal='17' />
+                  <column datatype='real' name='%_covid' ordinal='18' />
+                  <column datatype='real' name='%_covid+pneumonia' ordinal='19' />
+                  <column datatype='real' name='%_covid|pneumonia' ordinal='20' />
+                  <column datatype='integer' name='population' ordinal='21' />
+                  <column datatype='real' name='%_covid_per_pop' ordinal='22' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <shared-views>
+    <shared-view name='federated.1ah3ram04xcmgx17rpye51psmwaw'>
+      <datasources>
+        <datasource caption='weekly_df' name='federated.1ah3ram04xcmgx17rpye51psmwaw' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1ah3ram04xcmgx17rpye51psmwaw'>
+        <column-instance column='[start_date]' derivation='Month' name='[mn:start_date:ok]' pivot='key' type='ordinal' />
+        <column caption='Start Date' datatype='date' name='[start_date]' role='dimension' type='ordinal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.1ah3ram04xcmgx17rpye51psmwaw].[mn:start_date:ok]'>
+        <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter function='member' level='[mn:start_date:ok]' member='1' />
+          <groupfilter function='member' level='[mn:start_date:ok]' member='2' />
+          <groupfilter function='member' level='[mn:start_date:ok]' member='3' />
+          <groupfilter function='member' level='[mn:start_date:ok]' member='4' />
+          <groupfilter function='member' level='[mn:start_date:ok]' member='5' />
+          <groupfilter function='member' level='[mn:start_date:ok]' member='6' />
+          <groupfilter function='member' level='[mn:start_date:ok]' member='7' />
+          <groupfilter function='member' level='[mn:start_date:ok]' member='8' />
+          <groupfilter function='member' level='[mn:start_date:ok]' member='9' />
+          <groupfilter function='member' level='[mn:start_date:ok]' member='10' />
+          <groupfilter function='member' level='[mn:start_date:ok]' member='11' />
+          <groupfilter function='member' level='[mn:start_date:ok]' member='12' />
+        </groupfilter>
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>States&apos; COVID-19 Deaths </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='weekly_df' name='federated.1ah3ram04xcmgx17rpye51psmwaw' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1ah3ram04xcmgx17rpye51psmwaw'>
+            <column caption='Covid 19 Deaths' datatype='real' name='[covid_19_deaths]' role='measure' type='quantitative' />
+            <column-instance column='[start_date]' derivation='Month' name='[mn:start_date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column caption='Start Date' datatype='date' name='[start_date]' role='dimension' type='ordinal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[covid_19_deaths]' derivation='Sum' name='[sum:covid_19_deaths:qk]' pivot='key' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1ah3ram04xcmgx17rpye51psmwaw].[none:year:qk]' filter-group='3' included-values='in-range'>
+            <min>2019</min>
+            <max>2025</max>
+          </filter>
+          <slices>
+            <column>[federated.1ah3ram04xcmgx17rpye51psmwaw].[none:year:qk]</column>
+            <column>[federated.1ah3ram04xcmgx17rpye51psmwaw].[mn:start_date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1ah3ram04xcmgx17rpye51psmwaw].[Longitude (generated)]' field-type='quantitative' max='35485175.694736168' min='22954137.842976954' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1ah3ram04xcmgx17rpye51psmwaw].[Latitude (generated)]' field-type='quantitative' max='7598126.7409605347' min='2891036.3368000002' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1ah3ram04xcmgx17rpye51psmwaw].[sum:covid_19_deaths:qk]' />
+              <lod column='[federated.1ah3ram04xcmgx17rpye51psmwaw].[none:state:nk]' />
+              <geometry column='[federated.1ah3ram04xcmgx17rpye51psmwaw].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1ah3ram04xcmgx17rpye51psmwaw].[Latitude (generated)]</rows>
+        <cols>[federated.1ah3ram04xcmgx17rpye51psmwaw].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{7A5E2ADD-C351-4D83-AC55-3C473582DD28}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>COVID-19 vs. Pneumonia vs. Influenza Trends</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='weekly_df' name='federated.1ah3ram04xcmgx17rpye51psmwaw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ah3ram04xcmgx17rpye51psmwaw'>
+            <column caption='Covid 19 Deaths' datatype='real' name='[covid_19_deaths]' role='measure' type='quantitative' />
+            <column caption='Influenza Deaths' datatype='real' name='[influenza_deaths]' role='measure' type='quantitative' />
+            <column-instance column='[start_date]' derivation='Month' name='[mn:start_date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column caption='Pneumonia Deaths' datatype='real' name='[pneumonia_deaths]' role='measure' type='quantitative' />
+            <column caption='Start Date' datatype='date' name='[start_date]' role='dimension' type='ordinal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[covid_19_deaths]' derivation='Sum' name='[sum:covid_19_deaths:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[influenza_deaths]' derivation='Sum' name='[sum:influenza_deaths:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[pneumonia_deaths]' derivation='Sum' name='[sum:pneumonia_deaths:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[start_date]' derivation='Week-Trunc' name='[twk:start_date:qk]' pivot='key' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ah3ram04xcmgx17rpye51psmwaw].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ah3ram04xcmgx17rpye51psmwaw].[sum:covid_19_deaths:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ah3ram04xcmgx17rpye51psmwaw].[sum:influenza_deaths:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ah3ram04xcmgx17rpye51psmwaw].[sum:pneumonia_deaths:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1ah3ram04xcmgx17rpye51psmwaw].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.1ah3ram04xcmgx17rpye51psmwaw].[sum:covid_19_deaths:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1ah3ram04xcmgx17rpye51psmwaw].[sum:pneumonia_deaths:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1ah3ram04xcmgx17rpye51psmwaw].[sum:influenza_deaths:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.1ah3ram04xcmgx17rpye51psmwaw].[none:state:nk]' filter-group='4'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;California&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;Florida&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;Michigan&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;New York&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;Pennsylvania&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;Texas&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.1ah3ram04xcmgx17rpye51psmwaw].[none:year:qk]' filter-group='3' included-values='in-range'>
+            <min>2019</min>
+            <max>2025</max>
+          </filter>
+          <slices>
+            <column>[federated.1ah3ram04xcmgx17rpye51psmwaw].[none:year:qk]</column>
+            <column>[federated.1ah3ram04xcmgx17rpye51psmwaw].[:Measure Names]</column>
+            <column>[federated.1ah3ram04xcmgx17rpye51psmwaw].[none:state:nk]</column>
+            <column>[federated.1ah3ram04xcmgx17rpye51psmwaw].[mn:start_date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1ah3ram04xcmgx17rpye51psmwaw].[twk:start_date:qk]' field-type='quantitative' min='#2019-09-15 05:28:02.689#' range-type='fixedmin' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.1ah3ram04xcmgx17rpye51psmwaw].[Multiple Values]' scope='rows' value='Deaths Number ' />
+            <format attr='title' class='0' field='[federated.1ah3ram04xcmgx17rpye51psmwaw].[twk:start_date:qk]' scope='cols' value='' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.1ah3ram04xcmgx17rpye51psmwaw].[:Measure Names]' value=''>
+              <formatted-text />
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1ah3ram04xcmgx17rpye51psmwaw].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1ah3ram04xcmgx17rpye51psmwaw].[Multiple Values]</rows>
+        <cols>[federated.1ah3ram04xcmgx17rpye51psmwaw].[twk:start_date:qk]</cols>
+      </table>
+      <simple-id uuid='{16697DC5-DCC8-4494-B6AA-D286ED7EEFA4}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Total COVID-19 Death</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='weekly_df' name='federated.1ah3ram04xcmgx17rpye51psmwaw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ah3ram04xcmgx17rpye51psmwaw'>
+            <column caption='Covid 19 Deaths' datatype='real' name='[covid_19_deaths]' role='measure' type='quantitative' />
+            <column-instance column='[start_date]' derivation='Month' name='[mn:start_date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column caption='Start Date' datatype='date' name='[start_date]' role='dimension' type='ordinal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[covid_19_deaths]' derivation='Sum' name='[sum:covid_19_deaths:qk]' pivot='key' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ah3ram04xcmgx17rpye51psmwaw].[none:state:nk]' filter-group='4'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;California&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;Florida&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;Michigan&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;New York&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;Pennsylvania&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;Texas&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.1ah3ram04xcmgx17rpye51psmwaw].[none:year:qk]' filter-group='3' included-values='in-range'>
+            <min>2019</min>
+            <max>2025</max>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1ah3ram04xcmgx17rpye51psmwaw].[none:state:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1ah3ram04xcmgx17rpye51psmwaw].[sum:covid_19_deaths:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1ah3ram04xcmgx17rpye51psmwaw].[none:year:qk]</column>
+            <column>[federated.1ah3ram04xcmgx17rpye51psmwaw].[none:state:nk]</column>
+            <column>[federated.1ah3ram04xcmgx17rpye51psmwaw].[mn:start_date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1ah3ram04xcmgx17rpye51psmwaw].[none:state:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1ah3ram04xcmgx17rpye51psmwaw].[sum:covid_19_deaths:qk]</rows>
+        <cols>[federated.1ah3ram04xcmgx17rpye51psmwaw].[none:state:nk]</cols>
+      </table>
+      <simple-id uuid='{3606B355-78C6-4D53-83E3-DA8537971DF2}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>States&apos; COVID-19 Trends</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='weekly_df' name='federated.1ah3ram04xcmgx17rpye51psmwaw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ah3ram04xcmgx17rpye51psmwaw'>
+            <column caption='Covid 19 Deaths' datatype='real' name='[covid_19_deaths]' role='measure' type='quantitative' />
+            <column-instance column='[start_date]' derivation='Month' name='[mn:start_date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column caption='Start Date' datatype='date' name='[start_date]' role='dimension' type='ordinal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[covid_19_deaths]' derivation='Sum' name='[sum:covid_19_deaths:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[start_date]' derivation='Week-Trunc' name='[twk:start_date:qk]' pivot='key' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ah3ram04xcmgx17rpye51psmwaw].[none:state:nk]' filter-group='4'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;California&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;Florida&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;Michigan&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;New York&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;Pennsylvania&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;Texas&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.1ah3ram04xcmgx17rpye51psmwaw].[none:year:qk]' filter-group='3' included-values='in-range'>
+            <min>2019</min>
+            <max>2025</max>
+          </filter>
+          <slices>
+            <column>[federated.1ah3ram04xcmgx17rpye51psmwaw].[none:state:nk]</column>
+            <column>[federated.1ah3ram04xcmgx17rpye51psmwaw].[none:year:qk]</column>
+            <column>[federated.1ah3ram04xcmgx17rpye51psmwaw].[mn:start_date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1ah3ram04xcmgx17rpye51psmwaw].[twk:start_date:qk]' scope='cols' value='' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1ah3ram04xcmgx17rpye51psmwaw].[none:state:nk]' />
+              <lod column='[federated.1ah3ram04xcmgx17rpye51psmwaw].[none:state:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ah3ram04xcmgx17rpye51psmwaw].[sum:covid_19_deaths:qk]</rows>
+        <cols>[federated.1ah3ram04xcmgx17rpye51psmwaw].[twk:start_date:qk]</cols>
+      </table>
+      <simple-id uuid='{9A62F52B-9AD1-430C-A530-675E94BEBAF7}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>COVID-19 Deaths </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='weekly_df' name='federated.1ah3ram04xcmgx17rpye51psmwaw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ah3ram04xcmgx17rpye51psmwaw'>
+            <column caption='Covid 19 Deaths' datatype='real' name='[covid_19_deaths]' role='measure' type='quantitative' />
+            <column-instance column='[start_date]' derivation='Month' name='[mn:start_date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column caption='Start Date' datatype='date' name='[start_date]' role='dimension' type='ordinal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[covid_19_deaths]' derivation='Sum' name='[sum:covid_19_deaths:qk]' pivot='key' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ah3ram04xcmgx17rpye51psmwaw].[none:state:nk]' filter-group='4'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;California&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;Florida&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;Michigan&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;New York&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;Pennsylvania&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;Texas&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.1ah3ram04xcmgx17rpye51psmwaw].[none:year:qk]' filter-group='3' included-values='in-range'>
+            <min>2019</min>
+            <max>2025</max>
+          </filter>
+          <slices>
+            <column>[federated.1ah3ram04xcmgx17rpye51psmwaw].[none:state:nk]</column>
+            <column>[federated.1ah3ram04xcmgx17rpye51psmwaw].[none:year:qk]</column>
+            <column>[federated.1ah3ram04xcmgx17rpye51psmwaw].[mn:start_date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1ah3ram04xcmgx17rpye51psmwaw].[sum:covid_19_deaths:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{D6754384-ADA4-4D1E-8368-AA50C6FBA5E9}' />
+    </worksheet>
+    <worksheet name='Sheet 5 (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Total COVID-19 Deaths </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='weekly_df' name='federated.1ah3ram04xcmgx17rpye51psmwaw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ah3ram04xcmgx17rpye51psmwaw'>
+            <column caption='Covid 19 Deaths' datatype='real' name='[covid_19_deaths]' role='measure' type='quantitative' />
+            <column-instance column='[start_date]' derivation='Month' name='[mn:start_date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column caption='Start Date' datatype='date' name='[start_date]' role='dimension' type='ordinal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[covid_19_deaths]' derivation='Sum' name='[sum:covid_19_deaths:qk]' pivot='key' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ah3ram04xcmgx17rpye51psmwaw].[none:state:nk]' filter-group='4'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;California&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;Florida&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;Michigan&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;New York&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;Pennsylvania&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;Texas&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.1ah3ram04xcmgx17rpye51psmwaw].[none:year:qk]' filter-group='3' included-values='in-range'>
+            <min>2019</min>
+            <max>2025</max>
+          </filter>
+          <slices>
+            <column>[federated.1ah3ram04xcmgx17rpye51psmwaw].[none:state:nk]</column>
+            <column>[federated.1ah3ram04xcmgx17rpye51psmwaw].[none:year:qk]</column>
+            <column>[federated.1ah3ram04xcmgx17rpye51psmwaw].[mn:start_date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='289' />
+            <format attr='height' value='71' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' scope='cols' value='center' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='18' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1ah3ram04xcmgx17rpye51psmwaw].[sum:covid_19_deaths:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{77225A51-C07F-4998-87D7-7F58EAE03EBE}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Total Influenza Death</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='weekly_df' name='federated.1ah3ram04xcmgx17rpye51psmwaw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ah3ram04xcmgx17rpye51psmwaw'>
+            <column caption='Influenza Deaths' datatype='real' name='[influenza_deaths]' role='measure' type='quantitative' />
+            <column-instance column='[start_date]' derivation='Month' name='[mn:start_date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column caption='Start Date' datatype='date' name='[start_date]' role='dimension' type='ordinal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[influenza_deaths]' derivation='Sum' name='[sum:influenza_deaths:qk]' pivot='key' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ah3ram04xcmgx17rpye51psmwaw].[none:state:nk]' filter-group='4'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;California&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;Florida&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;Michigan&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;New York&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;Pennsylvania&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;Texas&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.1ah3ram04xcmgx17rpye51psmwaw].[none:year:qk]' filter-group='3' included-values='in-range'>
+            <min>2019</min>
+            <max>2025</max>
+          </filter>
+          <slices>
+            <column>[federated.1ah3ram04xcmgx17rpye51psmwaw].[none:state:nk]</column>
+            <column>[federated.1ah3ram04xcmgx17rpye51psmwaw].[none:year:qk]</column>
+            <column>[federated.1ah3ram04xcmgx17rpye51psmwaw].[mn:start_date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+            <format attr='width' value='283' />
+            <format attr='height' value='77' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='18' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1ah3ram04xcmgx17rpye51psmwaw].[sum:influenza_deaths:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{95F21A98-FF75-4864-B357-6F956F3C6BFC}' />
+    </worksheet>
+    <worksheet name='Sheet 8'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Weekly Covid Deaths</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='weekly_df' name='federated.1ah3ram04xcmgx17rpye51psmwaw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ah3ram04xcmgx17rpye51psmwaw'>
+            <column caption='latest week' datatype='boolean' name='[Calculation_5198490985424244737]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='DATETRUNC(&apos;week&apos;, [start_date]) = { FIXED : MAX(DATETRUNC(&apos;week&apos;, [start_date])) }' />
+            </column>
+            <column caption='Covid 19 Deaths' datatype='real' name='[covid_19_deaths]' role='measure' type='quantitative' />
+            <column-instance column='[start_date]' derivation='Month' name='[mn:start_date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_5198490985424244737]' derivation='None' name='[none:Calculation_5198490985424244737:nk]' pivot='key' type='nominal' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='Start Date' datatype='date' name='[start_date]' role='dimension' type='ordinal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[covid_19_deaths]' derivation='Sum' name='[sum:covid_19_deaths:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[start_date]' derivation='Day-Trunc' name='[tdy:start_date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ah3ram04xcmgx17rpye51psmwaw].[none:Calculation_5198490985424244737:nk]'>
+            <groupfilter function='member' level='[none:Calculation_5198490985424244737:nk]' member='true' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ah3ram04xcmgx17rpye51psmwaw].[none:state:nk]' filter-group='4'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;California&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;Florida&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;Michigan&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;New York&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;Pennsylvania&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;Texas&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1ah3ram04xcmgx17rpye51psmwaw].[none:state:nk]</column>
+            <column>[federated.1ah3ram04xcmgx17rpye51psmwaw].[none:Calculation_5198490985424244737:nk]</column>
+            <column>[federated.1ah3ram04xcmgx17rpye51psmwaw].[mn:start_date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='287' />
+            <format attr='height' value='75' />
+            <format attr='text-align' value='center' />
+            <format attr='text-format' field='[federated.1ah3ram04xcmgx17rpye51psmwaw].[sum:covid_19_deaths:qk]' value='n#,##0;-#,##0' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='15' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1ah3ram04xcmgx17rpye51psmwaw].[tdy:start_date:qk]' />
+              <text column='[federated.1ah3ram04xcmgx17rpye51psmwaw].[sum:covid_19_deaths:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{35EF98FD-E21F-45FA-8EC1-5242F980053B}' />
+    </worksheet>
+    <worksheet name='Sheet 8 (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Weekly Influenza Deaths</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='weekly_df' name='federated.1ah3ram04xcmgx17rpye51psmwaw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ah3ram04xcmgx17rpye51psmwaw'>
+            <column caption='latest week' datatype='boolean' name='[Calculation_5198490985424244737]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='DATETRUNC(&apos;week&apos;, [start_date]) = { FIXED : MAX(DATETRUNC(&apos;week&apos;, [start_date])) }' />
+            </column>
+            <column caption='Influenza Deaths' datatype='real' name='[influenza_deaths]' role='measure' type='quantitative' />
+            <column-instance column='[start_date]' derivation='Month' name='[mn:start_date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_5198490985424244737]' derivation='None' name='[none:Calculation_5198490985424244737:nk]' pivot='key' type='nominal' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='Start Date' datatype='date' name='[start_date]' role='dimension' type='ordinal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[influenza_deaths]' derivation='Sum' name='[sum:influenza_deaths:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[start_date]' derivation='Day-Trunc' name='[tdy:start_date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ah3ram04xcmgx17rpye51psmwaw].[none:Calculation_5198490985424244737:nk]'>
+            <groupfilter function='member' level='[none:Calculation_5198490985424244737:nk]' member='true' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ah3ram04xcmgx17rpye51psmwaw].[none:state:nk]' filter-group='4'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;California&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;Florida&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;Michigan&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;New York&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;Pennsylvania&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;Texas&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1ah3ram04xcmgx17rpye51psmwaw].[none:state:nk]</column>
+            <column>[federated.1ah3ram04xcmgx17rpye51psmwaw].[none:Calculation_5198490985424244737:nk]</column>
+            <column>[federated.1ah3ram04xcmgx17rpye51psmwaw].[mn:start_date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' value='72' />
+            <format attr='width' value='286' />
+            <format attr='text-align' value='center' />
+            <format attr='text-format' field='[federated.1ah3ram04xcmgx17rpye51psmwaw].[sum:influenza_deaths:qk]' value='n#,##0;-#,##0' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='15' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1ah3ram04xcmgx17rpye51psmwaw].[tdy:start_date:qk]' />
+              <text column='[federated.1ah3ram04xcmgx17rpye51psmwaw].[sum:influenza_deaths:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{FD2E85CB-5656-46F4-B3ED-654B440F62B8}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='768' maxwidth='1366' minheight='768' minwidth='1366' preset-index='0' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='weekly_df' name='federated.1ah3ram04xcmgx17rpye51psmwaw' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1ah3ram04xcmgx17rpye51psmwaw'>
+        <column-instance column='[start_date]' derivation='Month' name='[mn:start_date:ok]' pivot='key' type='ordinal' />
+        <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+        <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+        <column caption='Start Date' datatype='date' name='[start_date]' role='dimension' type='ordinal' />
+        <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+        <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='38020' id='6' param='horz' type-v2='layout-flow' w='89019' x='586' y='60938'>
+            <zone h='38020' id='22' name='Sheet 2' w='44766' x='586' y='60938'>
+              <layout-cache minwidth='159' type-h='fixed' type-w='scalable' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='38020' id='25' name='Sheet 4' w='44253' x='45352' y='60938'>
+              <layout-cache minwidth='152' type-h='fixed' type-w='scalable' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone h='11110' id='8' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='89019' x='586' y='14150'>
+            <zone h='11067' id='16' name='Sheet 5 (2)' show-title='false' w='22254' x='586' y='14193'>
+              <layout-cache fixed-size-w='80' type-h='fixed' type-w='fixed' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='11067' id='17' name='Sheet 6' show-title='false' w='22255' x='22840' y='14193'>
+              <layout-cache fixed-size-w='60' type-h='fixed' type-w='fixed' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='11067' id='15' name='Sheet 8' show-title='false' w='22255' x='45095' y='14193'>
+              <layout-cache fixed-size-w='100' type-h='fixed' type-w='fixed' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='11067' id='14' name='Sheet 8 (2)' show-title='false' w='22255' x='67350' y='14193'>
+              <layout-cache fixed-size-w='100' type-h='fixed' type-w='fixed' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='background-color' value='#e6ecf0' />
+            </zone-style>
+          </zone>
+          <zone h='97916' id='21' param='vert' type-v2='layout-flow' w='9809' x='89605' y='1042'>
+            <zone h='8985' id='19' name='Sheet 1' param='[federated.1ah3ram04xcmgx17rpye51psmwaw].[none:year:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='9809' x='89605' y='1042'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='6771' id='42' mode='checkdropdown' name='Sheet 3' param='[federated.1ah3ram04xcmgx17rpye51psmwaw].[mn:start_date:ok]' type-v2='filter' values='database' w='9809' x='89605' y='10027'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='6771' id='26' mode='checkdropdown' name='Sheet 4' param='[federated.1ah3ram04xcmgx17rpye51psmwaw].[none:state:nk]' type-v2='filter' w='9809' x='89605' y='16798'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='background-color' value='#f0eae8' />
+            </zone-style>
+          </zone>
+          <zone h='35678' id='18' name='Sheet 1' w='43960' x='586' y='25260'>
+            <layout-cache minheight='244' type-h='scalable' type-w='fixed' />
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='35678' id='24' name='Sheet 3' w='45059' x='44546' y='25260'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='8984' id='28' param='horz' type-v2='layout-flow' w='89019' x='586' y='1042'>
+            <zone forceUpdate='true' h='8984' id='29' type-v2='text' w='89019' x='586' y='1042'>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontsize='15'>COVID-19 Daashborad</run>
+              </formatted-text>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+                <format attr='background-color' value='#f0eae8' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone forceUpdate='true' h='4124' id='34' type-v2='text' w='21980' x='586' y='10026'>
+            <formatted-text>
+              <run bold='true' fontalignment='1' fontsize='12'>Total COVID-19 Deaths </run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+              <format attr='background-color' value='#e2e6f0' />
+            </zone-style>
+          </zone>
+          <zone forceUpdate='true' h='4124' id='35' type-v2='text' w='21980' x='22566' y='10026'>
+            <formatted-text>
+              <run bold='true' fontalignment='1' fontsize='12'>Total Influenza Deaths</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+              <format attr='background-color' value='#e2e6f0' />
+            </zone-style>
+          </zone>
+          <zone forceUpdate='true' h='4124' id='36' type-v2='text' w='21980' x='44546' y='10026'>
+            <formatted-text>
+              <run bold='true' fontalignment='1' fontsize='12'>Weekly COVID-19 Deaths</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+              <format attr='background-color' value='#f3ebf3' />
+            </zone-style>
+          </zone>
+          <zone forceUpdate='true' h='4124' id='37' type-v2='text' w='23079' x='66526' y='10026'>
+            <formatted-text>
+              <run bold='true' fontalignment='1' fontsize='12'>Weekly Influenza Daeths</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+              <format attr='background-color' value='#e2e6f0' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='10547' id='23' name='Sheet 2' pane-specification-id='1' param='[federated.1ah3ram04xcmgx17rpye51psmwaw].[:Measure Names]' type-v2='color' w='10249' x='33016' y='61458' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='2100' minheight='2100' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='44' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97916' id='43' param='vert' type-v2='layout-flow' w='98828' x='586' y='1042'>
+                <zone forceUpdate='true' h='8984' id='29' type-v2='text' w='89019' x='586' y='1042'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontsize='15'>COVID-19 Daashborad</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#f0eae8' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='4124' id='34' type-v2='text' w='21980' x='586' y='10026'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontsize='12'>Total COVID-19 Deaths </run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#e2e6f0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='4124' id='35' type-v2='text' w='21980' x='22566' y='10026'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontsize='12'>Total Influenza Deaths</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#e2e6f0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='4124' id='36' type-v2='text' w='21980' x='44546' y='10026'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontsize='12'>Weekly COVID-19 Deaths</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#f3ebf3' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='4124' id='37' type-v2='text' w='23079' x='66526' y='10026'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontsize='12'>Weekly Influenza Daeths</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#e2e6f0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='77' h='11067' id='16' is-fixed='true' name='Sheet 5 (2)' show-title='false' w='22254' x='586' y='14193'>
+                  <layout-cache fixed-size-w='80' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='77' h='11067' id='17' is-fixed='true' name='Sheet 6' show-title='false' w='22255' x='22840' y='14193'>
+                  <layout-cache fixed-size-w='60' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='77' h='11067' id='15' is-fixed='true' name='Sheet 8' show-title='false' w='22255' x='45095' y='14193'>
+                  <layout-cache fixed-size-w='100' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='77' h='11067' id='14' is-fixed='true' name='Sheet 8 (2)' show-title='false' w='22255' x='67350' y='14193'>
+                  <layout-cache fixed-size-w='100' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8985' id='19' name='Sheet 1' param='[federated.1ah3ram04xcmgx17rpye51psmwaw].[none:year:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='9809' x='89605' y='1042'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='266' h='35678' id='18' is-fixed='true' name='Sheet 1' w='43960' x='586' y='25260'>
+                  <layout-cache minheight='244' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6771' id='42' mode='checkdropdown' name='Sheet 3' param='[federated.1ah3ram04xcmgx17rpye51psmwaw].[mn:start_date:ok]' type-v2='filter' values='database' w='9809' x='89605' y='10027'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='266' h='35678' id='24' is-fixed='true' name='Sheet 3' w='45059' x='44546' y='25260'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='38020' id='22' is-fixed='true' name='Sheet 2' w='44766' x='586' y='60938'>
+                  <layout-cache minwidth='159' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='10547' id='23' name='Sheet 2' pane-specification-id='1' param='[federated.1ah3ram04xcmgx17rpye51psmwaw].[:Measure Names]' type-v2='color' w='10249' x='33016' y='61458'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6771' id='26' mode='checkdropdown' name='Sheet 4' param='[federated.1ah3ram04xcmgx17rpye51psmwaw].[none:state:nk]' type-v2='filter' w='9809' x='89605' y='16798'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='38020' id='25' is-fixed='true' name='Sheet 4' w='44253' x='45352' y='60938'>
+                  <layout-cache minwidth='152' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{B0FDF5A2-93EF-436B-8BB1-B85680910C8B}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1ah3ram04xcmgx17rpye51psmwaw].[none:year:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.1ah3ram04xcmgx17rpye51psmwaw].[sum:covid_19_deaths:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7AA0F50A-C95F-489D-8C6B-847A11255FD3}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1ah3ram04xcmgx17rpye51psmwaw].[none:year:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='1' param='[federated.1ah3ram04xcmgx17rpye51psmwaw].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D14B188F-3EE8-432A-85AF-D442F8B63519}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1ah3ram04xcmgx17rpye51psmwaw].[none:year:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='1' param='[federated.1ah3ram04xcmgx17rpye51psmwaw].[none:state:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DACE1857-67FD-4CFD-9D59-F884D43FCED3}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1ah3ram04xcmgx17rpye51psmwaw].[none:state:nk]' type='filter' />
+            <card param='[federated.1ah3ram04xcmgx17rpye51psmwaw].[none:year:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.1ah3ram04xcmgx17rpye51psmwaw].[none:state:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B52FCD3A-A2E7-4738-A672-EA8D2F55E215}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{EFCD049D-241A-41F2-828F-57A2BB38EAF2}' />
+    </window>
+    <window class='worksheet' name='Sheet 5 (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8C7EDAAC-4BB6-4420-A273-5AA225721BB5}' />
+    </window>
+    <window class='worksheet' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{96C461DA-08ED-4B5B-82D1-6DABA20F2179}' />
+    </window>
+    <window class='worksheet' name='Sheet 8'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{10E2469A-8D31-4BD1-9756-95811E3C37D3}' />
+    </window>
+    <window class='worksheet' name='Sheet 8 (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6F4B257D-98A4-4BA7-AE3A-8D222E12BDA2}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 1'>
+          <zoom type='entire-view' />
+          <default-map-tool-selection tool='1' />
+        </viewpoint>
+        <viewpoint name='Sheet 2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 3'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 4'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 5 (2)' />
+        <viewpoint name='Sheet 6' />
+        <viewpoint name='Sheet 8' />
+        <viewpoint name='Sheet 8 (2)' />
+      </viewpoints>
+      <active id='16' />
+      <simple-id uuid='{0A4D2C63-5CEC-45E7-9D75-1B0765CC2652}' />
+    </window>
+  </windows>
+</workbook>
